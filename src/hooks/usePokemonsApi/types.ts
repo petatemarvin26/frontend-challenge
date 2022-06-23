@@ -13,6 +13,6 @@ type PokemonApiProps =
       results: PokemonApiPropsResult[];
     }
   | undefined;
-type PokemonApiHooksProps = { loading: boolean; response: PokemonApiProps };
+type PokemonApiHooksProps = { loading: boolean; response: any };
 
-export type { PokemonApiProps, PokemonApiHooksProps };
+export type { PokemonApiPropsResult, PokemonApiProps, PokemonApiHooksProps };

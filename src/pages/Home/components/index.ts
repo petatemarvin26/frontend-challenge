@@ -1,3 +1,3 @@
-import Pokemon from './Pokemon';
+import PokemonName from './PokemonName';
 
-export { Pokemon };
+export { PokemonName };

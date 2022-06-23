@@ -1,0 +1,13 @@
+.pokemonPane {
+  height: 85vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemonPane .pokemon {
+  width: 80%;
+  height: 90%;
+  border-radius: 0.5vh;
+  background-color: var(--ACCENT-COLOR2);
+  box-shadow: var(--SHADOW);
+}

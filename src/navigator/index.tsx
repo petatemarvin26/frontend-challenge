@@ -1,20 +1,35 @@
+import { useState } from 'react';
+import { PokemonContext } from 'context';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Home } from 'pages';
-import { View } from 'components';
+import { PokemonApiPropsResult } from 'hooks';
 
 import { NavigationBar } from './components';
+import routes from './routes';
 
 const Navigator: React.FC = () => {
+  const [selectedPokemon, setSelectedPokemon] = useState<PokemonApiPropsResult>(
+    { name: '', url: '' }
+  );
+
+  const onSelectPokemon = (pokemon: PokemonApiPropsResult) => {
+    setSelectedPokemon(pokemon);
+  };
+
   return (
-    <View>
+    <PokemonContext.Provider
+      value={{ selected: selectedPokemon, onSelect: onSelectPokemon }}
+    >
       <NavigationBar />
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
+          {routes.map((route, index) => (
+            <Route key={index} {...route} />
+          ))}
+          v
         </Routes>
       </BrowserRouter>
-    </View>
+    </PokemonContext.Provider>
   );
 };
 

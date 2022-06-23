@@ -4,6 +4,5 @@ import View from './View';
 import Text from './Text';
 import Button from './Button';
 import Separator from './Separator';
-import * as Indicator from './Indicator';
 
-export { Input, Indicator, Image, View, Text, Button, Separator };
+export { Input, Image, View, Text, Button, Separator };

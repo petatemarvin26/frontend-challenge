@@ -1,15 +1,18 @@
 import { useEffect, useState } from 'react';
-import { AxiosResponse } from 'axios';
 
 import { pokemonServer } from 'api';
-import { PokemonApiProps, PokemonApiHooksProps } from './types';
+import {
+  PokemonApiProps,
+  PokemonApiHooksProps,
+  PokemonApiPropsResult
+} from './types';
 
-function usePokemonApi(): PokemonApiHooksProps {
+function usePokemonApi(url: string): PokemonApiHooksProps {
   const [loading, setLoading] = useState<boolean>(true);
-  const [response, setPokemons] = useState<PokemonApiProps>();
+  const [response, setPokemons] = useState<any>();
 
   const effectListener = () => {
-    pokemonServer.get('/api/v2/ability', {}).then((data: any) => {
+    pokemonServer.get(url, {}).then((data: any) => {
       setPokemons(data);
       setLoading(false);
     });
@@ -20,5 +23,7 @@ function usePokemonApi(): PokemonApiHooksProps {
     response
   };
 }
+
+export type { PokemonApiHooksProps, PokemonApiProps, PokemonApiPropsResult };
 
 export default usePokemonApi;

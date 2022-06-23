@@ -1,14 +1,14 @@
-.pokemonPane {
+.pokemonNamePane {
   width: 14vw;
   height: 10vh;
   padding: 0;
   margin: 0;
   background-color: var(--ACCENT-COLOR3);
-  box-shadow: var(--SHADOW);
+  box-shadow: var(--MIN-SHADOW);
 }
 
-.pokemonPane .title {
+.pokemonNamePane .title {
   font-weight: bold;
-  font-size: 2vh;
+  font-size: 1.5vmin;
   color: var(--BLACK);
 }

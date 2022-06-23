@@ -1,0 +1,17 @@
+.statPane {
+}
+
+.statPane .name {
+}
+
+.statPane .indicator {
+}
+.indicator .MuiCircularProgress-colorPrimary {
+  color: green !important;
+}
+
+.indicator .MuiCircularProgress-root {
+  left: 43%;
+  position: absolute;
+  top: 44vh;
+}

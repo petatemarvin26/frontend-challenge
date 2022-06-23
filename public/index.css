@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
 
 :root {
-  --ACCENT-COLOR: #ff551c;
+  --ACCENT-COLOR: #c54116;
   --ACCENT-COLOR2: #fc6b3c;
   --ACCENT-COLOR3: #ffe960;
 
   --WHITE: #fff;
   --BLACK: #000;
 
-  --SHADOW: 0.25vh 0.25vh 0.5vh rgba(0, 0, 0, 0.25)
+  --MIN-SHADOW: 0.25vh 0.25vh 0.5vh rgba(0, 0, 0, 0.25);
+  --SHADOW: 0.25vh 0.25vh 2vh 1vh rgba(0, 0, 0, 0.1);
 }
 
 html,
