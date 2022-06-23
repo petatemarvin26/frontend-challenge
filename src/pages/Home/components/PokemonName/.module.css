@@ -4,8 +4,13 @@
   padding: 0;
   margin: 0;
   border-radius: 0.5vh;
+  border: none;
   background-color: var(--ACCENT-COLOR4);
   box-shadow: var(--MIN-SHADOW);
+}
+
+.pokemonNamePane:active {
+  opacity: 0.5;
 }
 
 .pokemonNamePane .title {

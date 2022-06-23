@@ -1,8 +1,9 @@
-import { Text, Button } from 'components';
+import Button from 'react-bootstrap/Button';
+
+import { Text } from 'components';
 
 import { Props } from './types';
 import styles from './.module.css';
-import { toNameString } from 'utils/strings';
 
 const Pokemon: React.FC<Props> = ({ name, url, onSelect }) => {
   return (
