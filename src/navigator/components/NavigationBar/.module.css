@@ -1,0 +1,14 @@
+.navigationBarPane {
+  flex-direction: row;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vh;
+  background-color: var(--ACCENT-COLOR2);
+}
+
+.navigationBarPane .title {
+  font-size: 3vh;
+  letter-spacing: 0.15vh;
+  color: var(--WHITE);
+}

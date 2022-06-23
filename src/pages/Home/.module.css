@@ -1,0 +1,14 @@
+.homePane {
+  height: 85vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.homePane .listPane {
+  width: 77.5%;
+  height: 50vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vh;
+  overflow-y: auto;
+}

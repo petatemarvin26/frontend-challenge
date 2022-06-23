@@ -1,14 +1,20 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Home } from 'pages';
+import { View } from 'components';
+
+import { NavigationBar } from './components';
 
 const Navigator: React.FC = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <View>
+      <NavigationBar />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </View>
   );
 };
 

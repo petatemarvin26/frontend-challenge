@@ -1,16 +1,19 @@
-import { Text, View } from 'components';
-import { useEffect } from 'react';
-
+import { View } from 'components';
 import { usePokemonApi } from 'hooks';
 
-const Home: React.FC = () => {
-  const [loading, respose] = usePokemonApi();
+import { Pokemon } from './components';
+import styles from './.module.css';
 
-  console.log(loading ? 'LOADING' : respose);
+const Home: React.FC = () => {
+  const { loading, response } = usePokemonApi();
 
   return (
-    <View>
-      <Text>HOME PAGE</Text>
+    <View className={styles.homePane}>
+      <View className={styles.listPane}>
+        {response?.results.map((result, index) => (
+          <Pokemon key={index} name={result.name} />
+        ))}
+      </View>
     </View>
   );
 };

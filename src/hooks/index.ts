@@ -1,3 +1,3 @@
-import usePokemonApi from './usePokemonApi';
+import usePokemonApi from './usePokemonsApi';
 
 export { usePokemonApi };
