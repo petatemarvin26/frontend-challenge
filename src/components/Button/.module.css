@@ -1,0 +1,20 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Font-Regular;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button:active {
+  outline: none;
+  opacity: 0.5;
+}
+
+.button:hover {
+  cursor: pointer;
+}
