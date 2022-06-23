@@ -1,5 +1,7 @@
-import { AxiosResponse } from 'axios';
+import { AxiosError } from 'axios';
 
-function reject({ data, config }: AxiosResponse) {}
+function reject(data: AxiosError) {
+  return Promise.reject(data);
+}
 
 export default reject;
