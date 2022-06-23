@@ -3,11 +3,80 @@
   align-items: center;
   justify-content: center;
 }
+.pokemonPane .loadingPane {
+  flex-direction: row;
+  width: 80%;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vh;
+  background-color: var(--ACCENT-COLOR2);
+  box-shadow: var(--SHADOW);
+}
 
 .pokemonPane .pokemon {
+  flex-direction: row;
   width: 80%;
   height: 90%;
   border-radius: 0.5vh;
   background-color: var(--ACCENT-COLOR2);
   box-shadow: var(--SHADOW);
+}
+
+.pokemon .leftPane {
+  flex: 1;
+}
+.leftPane .upperLeftPane {
+  flex: 2;
+  align-items: center;
+  justify-content: flex-end;
+}
+.upperLeftPane .header {
+}
+.header .name {
+  font-weight: bold;
+  font-size: 5vh;
+  letter-spacing: 0.25vh;
+  color: var(--WHITE);
+  margin: 2vh 0;
+}
+.header .typePane {
+  flex-direction: row;
+  width: 60%;
+  column-gap: 1vh;
+}
+
+.leftPane .bodyLeftPane {
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1vh;
+}
+
+.leftPane .lowerLeftPane {
+  flex: 1.75;
+  align-items: center;
+  justify-content: flex-start;
+}
+.lowerLeftPane .abilityPane {
+  width: 70%;
+  height: 10vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  gap: 1vh;
+}
+
+.pokemon .rightPane {
+  flex: 1.75;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightPane .image {
+  height: 70vh;
+  width: 60vh;
+  object-fit: contain;
 }

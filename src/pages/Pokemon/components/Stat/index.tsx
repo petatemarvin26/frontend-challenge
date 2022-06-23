@@ -1,17 +1,17 @@
-import { Text, View } from 'components';
+import { Text, View, Indicator } from 'components';
 
 import { Props } from './types';
 import styles from './.module.css';
-import { LinearProgress } from '@mui/material';
 
 const Stat: React.FC<Props> = ({ name, value }) => {
   return (
     <View className={styles.statPane}>
-      <Text className={styles.name}>{name}</Text>
-      <LinearProgress
-        variant='determinate'
-        value={value}
-        classes={{ colorPrimary: 'red', barColorPrimary: 'orange' }}
+      <Text className={styles.name}>{name.toUpperCase()}</Text>
+      <Indicator.ProgressBar
+        progress={value}
+        roundCorder={0.4}
+        className={styles.indicator}
+        barColor='var(--ACCENT-COLOR3)'
       />
     </View>
   );

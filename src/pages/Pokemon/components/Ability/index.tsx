@@ -1,13 +1,14 @@
 import { Text, View } from 'components';
 
-import { Props } from './types';
 import styles from './.module.css';
+import { Props } from './types';
 
-const Type: React.FC<Props> = ({ name }) => {
+const Ability: React.FC<Props> = ({ name }) => {
   return (
-    <View className={styles.typePane}>
+    <View className={styles.abilityPane}>
       <Text className={styles.name}>{name.toUpperCase()}</Text>
     </View>
   );
 };
-export default Type;
+
+export default Ability;

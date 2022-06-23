@@ -3,12 +3,14 @@
   height: 10vh;
   padding: 0;
   margin: 0;
-  background-color: var(--ACCENT-COLOR3);
+  border-radius: 0.5vh;
+  background-color: var(--ACCENT-COLOR4);
   box-shadow: var(--MIN-SHADOW);
 }
 
 .pokemonNamePane .title {
   font-weight: bold;
-  font-size: 1.5vmin;
+  font-size: 1.75vmin;
+  letter-spacing: 0.25vh;
   color: var(--BLACK);
 }
